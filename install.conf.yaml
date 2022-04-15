@@ -1,5 +1,12 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
+    ~/.gitignore: git/gitignore
 
-
+- shell:
+  - [chsh -s $(which zsh), Making zsh the default shell]
+  - [git submodule update --init --recursive, Installing submodules]
