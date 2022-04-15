@@ -12,7 +12,7 @@ for plugin in ${plugins[@]}; do
     echo "> $plugin"
     plugin_name=`basename $plugin`
 
-    if [[ ! -f "$plugin_name/$plugin_name.zsh" ]]; then
+    if [[ ! -f "$plugin_name/.git/config" ]]; then
         git clone https://github.com/$plugin $plugin_name
     fi
 done
