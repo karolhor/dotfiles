@@ -10,7 +10,8 @@ fi
 brew_pkgs=`brew ls --versions`
 
 brew_install() {
-    if ! grep -qw "$@" <<< "$brew_pkgs"; then
+    app_name=`echo $@ | awk '{print $NF}'`
+    if ! grep -qw "$app_name" <<< "$brew_pkgs"; then
         brew install "$@"
     fi
 }
@@ -38,6 +39,8 @@ brew_install mongodb-community
 
 brew tap homebrew/cask-fonts
 brew_install font-jetbrains-mono-nerd-font
+
+brew_install --cask visual-studio-code
 
 unset brew_install
 unset brew_pkgs
