@@ -7,8 +7,12 @@ then
     NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"    
 fi  
 
+brew_pkgs=`brew ls --versions`
+
 brew_install() {
-    brew info "$@" > /dev/null 2>&1 || brew install "$@"
+    if ! grep -qw "$@" <<< "$brew_pkgs"; then
+        brew install "$@"
+    fi
 }
 
 brew_install git
@@ -36,3 +40,4 @@ brew tap homebrew/cask-fonts
 brew_install font-jetbrains-mono-nerd-font
 
 unset brew_install
+unset brew_pkgs
