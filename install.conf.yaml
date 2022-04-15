@@ -5,8 +5,19 @@
 - clean: ['~']
 
 - link:
-    ~/.gitignore: git/gitignore
+    ~/.gitignore: git/gitignore.symlink
+    # ~/.zshrc: zsh/zshrc.symlink
+    # ~/.zprofile: zsh/zprofile.symlink
 
 - shell:
-  - [chsh -s $(which zsh), Making zsh the default shell]
+  - 
+    command: 'if [[ "$SHELL" != *"zsh"* ]]; then chsh -s $(which zsh); fi'
+    stdout: true
+    stderr: true
+    description: Making zsh the default shell
   - [git submodule update --init --recursive, Installing submodules]
+  - 
+    command: ./install_tools
+    stdout: true
+    stderr: true
+    description: Run all dotfiles installers
