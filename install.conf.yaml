@@ -17,7 +17,7 @@
     description: Making zsh the default shell
   - [git submodule update --init --recursive, Installing submodules]
   - 
-    command: ./install_tools
+    command: ./scripts/install_tools
     stdout: true
     stderr: true
     description: Run all dotfiles installers

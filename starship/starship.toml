@@ -1,0 +1,77 @@
+scan_timeout = 100
+command_timeout = 1000
+
+[aws]
+disabled = true
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[deno]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[helm]
+disabled = true
+
+[java]
+style = "cyan"
+
+[julia]
+disabled = true
+
+[nim]
+disabled = false
+
+[nix_shell]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[openstack]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+disabled = true
+
+[purescript]
+disabled = true
+
+[rlang]
+disabled = true
+
+[red]
+disabled = true
+
+[ruby]
+disabled = true
+
+[singularity]
+disabled = true
+
+[vagrant]
+disabled = true
+
+[vlang]
+disabled = true
+
+[vcsh]
+disabled = true
+
+[zig]
+disabled = true
