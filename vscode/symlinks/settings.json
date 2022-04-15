@@ -1,0 +1,15 @@
+{
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "workbench.colorTheme": "Default Dark+",
+    "cmake.configureOnOpen": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "redhat.telemetry.enabled": false,
+
+    "yaml.schemas": {
+        "https://appengine.allegrogroup.com/en/latest/schemas/tycho.json": "*/tycho.yaml"
+    }
+}
