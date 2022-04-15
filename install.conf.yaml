@@ -4,6 +4,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.zsh-plugins
+
 - link:
     ~/.gitignore: git/gitignore.symlink
     ~/.zshrc: zsh/zshrc.symlink
