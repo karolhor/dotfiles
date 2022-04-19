@@ -1,3 +1,3 @@
 # your default editor
 export EDITOR='vim'
-export VISUAL='code'
+export VISUAL="code --wait"
