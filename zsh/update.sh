@@ -3,6 +3,9 @@
 echo "Updating zsh plugins:"
 for f in ~/.zsh-plugins/*
 do
-    echo "> `basename $f`"
-    cd $f && git pull
+    if [ -d $f ]
+    then
+        echo "> `basename $f`"
+        cd $f && git pull
+    fi
 done

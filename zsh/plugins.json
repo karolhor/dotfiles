@@ -1,0 +1,12 @@
+{
+    "fast-syntax-highlighting": {
+        "fullName": "z-shell/fast-syntax-highlighting",
+        "repoUrl": "https://github.com/z-shell/fast-syntax-highlighting",
+        "cmd": "F-Sy-H.plugin.zsh"
+    },
+    "zsh-autosuggestions": {
+        "fullName": "zsh-users/zsh-autosuggestions",
+        "repoUrl": "https://github.com/zsh-users/zsh-autosuggestions",
+        "cmd": "zsh-autosuggestions.plugin.zsh"
+    }
+}

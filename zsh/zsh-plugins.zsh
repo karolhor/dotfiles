@@ -1,6 +1,13 @@
 #!/bin/zsh
 
+metadataJson=`realpath zsh/plugins.json`
+
 for f in ~/.zsh-plugins/*; do
-    plugin_name=`basename $f`
-    source $f/$plugin_name.plugin.zsh
+    if [ -d $f ]
+    then
+        plugin_name=`basename $f`
+        cmd=`cat $metadataJson | jq -r ".\"$plugin_name\".cmd"`
+        
+        source $f/$cmd
+    fi    
 done
