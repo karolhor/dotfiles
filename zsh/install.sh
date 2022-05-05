@@ -1,6 +1,6 @@
 #!/bin/sh
 
-metadataJson=`realpath zsh/plugins.json`
+metadataJson="$DOTFILES/zsh/plugins.json"
 
 cd $HOME/.zsh-plugins
 
