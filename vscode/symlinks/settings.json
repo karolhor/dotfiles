@@ -11,5 +11,6 @@
 
     "yaml.schemas": {
         "https://appengine.allegrogroup.com/en/latest/schemas/tycho.json": "*/tycho.yaml"
-    }
+    },
+    "npm.keybindingsChangedWarningShown": true
 }
