@@ -3,7 +3,7 @@
 ## Instalation
 ```sh
 git clone https://github.com/karolhor/dotfiles ~/.dotfiles
-cd ~/dotfiles && ./install
+cd ~/.dotfiles && ./install
 ```
 
 ## Naming conventions
