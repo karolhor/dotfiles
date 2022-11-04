@@ -1,4 +1,4 @@
-src/main/resources/config/application-local.yml
+.java-version
 .node-version
 *.iml
 .idea/

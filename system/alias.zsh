@@ -2,7 +2,7 @@
 
 # GNU ls aliases
 #
-alias ls='/usr/local/bin/gls --color=auto'
+alias ls='/opt/homebrew/bin/gls --color=auto'
 alias ll='ls -lFh'     			# long (-l), types classify (-F),human readable (-h)
 alias l='ll'
 alias la='ls -lah'
@@ -20,4 +20,3 @@ alias ....='cd ../../../..'
 #
 alias grep='egrep --color=auto '
 alias egrep='egrep --color=auto '
-

@@ -33,6 +33,10 @@ brew_install openjdk@11
 brew_install openjdk@17
 brew_install aria2
 brew_install colordiff
+brew_install coreutils
+brew_install colima
+brew_install docker
+brew_install docker-compose
 
 brew tap mongodb/brew
 brew_install mongodb-community

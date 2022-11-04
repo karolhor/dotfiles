@@ -2,6 +2,10 @@
 
 metadataJson="$DOTFILES/zsh/plugins.json"
 
+if [[ ! -f "$HOME/.zsh-plugins" ]]; then
+    mkdir -p $HOME/.zsh-plugins
+fi
+
 cd $HOME/.zsh-plugins
 
 plugins=`cat $metadataJson | jq -r 'keys | join(" ")'`
