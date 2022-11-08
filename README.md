@@ -6,6 +6,11 @@ git clone https://github.com/karolhor/dotfiles ~/.dotfiles
 cd ~/.dotfiles && ./install
 ```
 
+## Upgrade dotbot
+```sh
+git submodule update --remote dotbot
+```
+
 ## Naming conventions
 There are a few special files in the hierarchy:
 
@@ -20,6 +25,8 @@ There are a few special files in the hierarchy:
 * **topic/install.sh**: Any file named `install.sh` is executed when you run `./install`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
 
 * **topic/update.sh**: Any file named `update.sh` is executed when you run `./update`. To avoid being loaded automatically, its extension is `.sh`, not `.zsh`.
+
+* ***.private.***: Any files that has `.private.` part in names will be ignored by git
 
 ## Credits
 * https://github.com/holman/dotfiles

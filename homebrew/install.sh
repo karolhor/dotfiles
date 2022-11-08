@@ -37,6 +37,8 @@ brew_install coreutils
 brew_install colima
 brew_install docker
 brew_install docker-compose
+brew_install docker-credential-helper
+brew_install maven
 
 brew tap mongodb/brew
 brew_install mongodb-community

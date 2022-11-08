@@ -1,0 +1,1 @@
+alias docker-killall='docker stop $(docker ps -q)'
