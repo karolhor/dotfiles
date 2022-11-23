@@ -11,11 +11,13 @@ brew_pkgs=`brew ls --versions`
 
 brew_install() {
     app_name=`echo $@ | awk '{print $NF}'`
+    echo "  > $app_name"
     if ! grep -qw "$app_name" <<< "$brew_pkgs"; then
         brew install "$@"
     fi
 }
 
+echo "  Installing Homebrew pkgs"
 brew_install git
 brew_install pyenv
 brew_install pyenv-virtualenv
@@ -39,6 +41,10 @@ brew_install docker
 brew_install docker-compose
 brew_install docker-credential-helper
 brew_install maven
+brew_install awscli
+brew_install nim
+brew_install kubectl
+brew_install sdl2
 
 brew tap mongodb/brew
 brew_install mongodb-community

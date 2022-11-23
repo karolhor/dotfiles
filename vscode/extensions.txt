@@ -9,11 +9,13 @@ mhutchie.git-graph
 MS-CEINTL.vscode-language-pack-pl
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 ms-vscode-remote.remote-wsl
 ms-vscode.cmake-tools
 ms-vscode.cpptools
 ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
+ms-vscode.remote-explorer
 Orta.vscode-jest
 platformio.platformio-ide
 redhat.vscode-yaml
