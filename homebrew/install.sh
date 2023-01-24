@@ -45,14 +45,21 @@ brew_install awscli
 brew_install nim
 brew_install kubectl
 brew_install sdl2
+brew_install terraform
+brew_install gh
 
 brew tap mongodb/brew
 brew_install mongodb-community
 
+# jetbrains fonts
 brew tap homebrew/cask-fonts
 brew_install font-jetbrains-mono-nerd-font
 
 brew_install --cask visual-studio-code
+
+# wrk2
+brew tap jabley/homebrew-wrk2
+brew_install --HEAD wrk2
 
 unset brew_install
 unset brew_pkgs
