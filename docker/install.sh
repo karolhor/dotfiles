@@ -2,7 +2,7 @@ if test ! $(which docker)
 then
     echo "  Docker not found."
 
-    exit -1
+    exit 0
 fi  
 
 if [[ ! -f "$HOME/.docker/cli-plugins" ]]; then
