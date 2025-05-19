@@ -3,7 +3,9 @@
 ## Instalation
 ```sh
 git clone https://github.com/karolhor/dotfiles ~/.dotfiles
-cd ~/.dotfiles && ./install
+cd ~/.dotfiles 
+git submodule update --init --recursive
+./install
 ```
 
 ## Upgrade dotbot
