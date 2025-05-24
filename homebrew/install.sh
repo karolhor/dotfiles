@@ -38,6 +38,7 @@ brew_install colordiff
 brew_install coreutils
 brew_install colima
 brew_install docker
+brew_install libpq
 
 brew tap mongodb/brew
 brew_install mongodb-community
